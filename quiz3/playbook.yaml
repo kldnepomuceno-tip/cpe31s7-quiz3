@@ -1,0 +1,12 @@
+---
+- name: Enterprise Services
+  hosts: target
+
+  tasks:
+  - name: Install ftp_server
+    include_role:
+      name: ftp_server
+
+  - name: Run ftp_client
+    include_role:
+      name: ftp_client
